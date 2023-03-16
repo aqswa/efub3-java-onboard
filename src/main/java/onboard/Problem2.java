@@ -11,7 +11,7 @@ public class Problem2 {
             int e = flipCards[i][1];
             int mid = (s-e)/2;
             for(int j=0; j<=mid; j++){
-                int temp = anser[s+j];
+                int temp = answer[s+j];
                 answer[s+j] = answer[e-j];
                 answer[e-j] = temp;
             }

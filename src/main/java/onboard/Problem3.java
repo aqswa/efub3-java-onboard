@@ -1,16 +1,16 @@
 package onboard;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Problem3 {
     public static List<Integer> solution(List<Integer> numbers){
         List<Integer> answer = new ArrayList<>();
-        Arrays.sort(numbers);
-        Integer mean = (numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4]) / 5;
+        Collections.sort(numbers);
+        Integer mean = (numbers.get(0) + numbers.get(1) + numbers.get(2) + numbers.get(3) + numbers.get(4)) / 5;
         answer.add(mean);
-        answer.add(numbers[2]);
+        answer.add(numbers.get(2));
         return answer;
     }
 }
